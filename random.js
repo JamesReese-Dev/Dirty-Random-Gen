@@ -11,7 +11,7 @@ let group7 = [];
 let group8 = [];
 let group9 = [];
 
-function RandomList() {
+function randomList() {
 
     let names = [
         'Aaron',
@@ -90,4 +90,4 @@ function RandomList() {
 
 
 
-RandomList();
+randomList();
