@@ -9,7 +9,6 @@ let group5 = [];
 let group6 = [];
 let group7 = [];
 let group8 = [];
-let group9 = [];
 
 function randomList() {
 
@@ -29,8 +28,6 @@ function randomList() {
         'James',
         'Jesse',
         'John',
-        'Joseph',
-        'Joshua',
         'Kristen',
         'Michael',
         'Swapna',
@@ -38,12 +35,11 @@ function randomList() {
         'Taylor',
         'Tyler',
         'Victor',
-        'Victor ',
         'Zane'];
 
     let testArray = _.shuffle(names);
 
-
+    console.log(names.length);
     for (let i = 0; i < testArray.length; i++) {
         if (group1.length < 3) {
             group1.push(testArray[i]);
@@ -66,11 +62,8 @@ function randomList() {
         else if (group7.length < 3) {
             group7.push(testArray[i]);
         }
-        else if (group8.length < 3) {
-            group8.push(testArray[i]);
-        }
         else {
-            group9.push(testArray[i]);
+            group8.push(testArray[i]);
         }
 
     }
@@ -83,7 +76,6 @@ function randomList() {
     console.log(`Group 6: ${group6}`);
     console.log(`Group 7: ${group7}`);
     console.log(`Group 8: ${group8}`);
-    console.log(`Group 9: ${group9}`);
 
 }
 
